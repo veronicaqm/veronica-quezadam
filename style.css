@@ -1,0 +1,71 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+}
+
+.main-content {
+  background-color: rbg(21,21,17);
+  background-image:
+  url("https://cdn.pixabay.com/photo/2017/05/08/13/15/spring-bird-2295431_1280.jpg");
+  width: 100%;
+  height: 500px;
+  background-position: 50% 50%; 
+  background-size: cover; 
+  position: relative;
+  z-index: 0;
+}
+
+.main-content::after {
+  content:"";
+  background-color: rgba(68, 68, 68,0.50);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  z-index: 1; 
+}
+
+.personal-information {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  z-index: 2;   
+}
+
+h1{ 
+  font-size: 40px;
+  font-weight: 700;
+  color: whitesmoke;
+  text-align: center
+}
+
+.title {
+  padding: 10px 30px;
+  background-color: #B3439D;
+  margin: 0 auto; 
+  border-radius: 25px;
+  text-align: center
+  
+}
+
+.title a{
+  text-decoration: none;
+  color: #98D0E9;
+  
+}
